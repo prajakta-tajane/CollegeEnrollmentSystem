@@ -1,0 +1,25 @@
+<h2> College List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> College Name</th>
+            <th> College Location </th>
+            <th> College Phoneno </th>
+            <th> College Email</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let college of colleges" >
+            <td> {{ college.collegeName }} </td>
+            <td> {{ college.collegeLocation }} </td>
+            <td> {{ college.collegePhoneno }} </td>
+            <td> {{ college.collegeEmail }} </td>
+            <td>
+                <button (click) = "updateCollege(college.collegeName)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteCollege(college.collegeName)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "collegeDetails(college.collegeName)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

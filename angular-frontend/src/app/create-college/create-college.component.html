@@ -1,0 +1,32 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Create College </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> College Name</label>
+            <input type="text" class ="form-control" id = "collegeName"
+                [(ngModel)] = "college.collegeName" name = "collegeName">
+        </div>
+    
+        <div class="form-group">
+            <label>  College Location</label>
+            <input type="text" class ="form-control" id = "lastName"
+                [(ngModel)] = "college.lastName" name = "lastName">
+        </div>
+
+        <div class="form-group">
+            <label>  collegePhoneno</label>
+            <input type="text" class ="form-control" id = "collegePhoneno"
+                [(ngModel)] = "college.collegePhoneno" name = "collegePhoneno">
+        </div>
+    
+        <div class="form-group">
+            <label> College Email</label>
+            <input type="text" class ="form-control" id = "collegeEmail"
+                [(ngModel)] = "college.collegeEmail" name = "collegeEmail">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 
